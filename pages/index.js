@@ -13,7 +13,7 @@ export default function Home({ stories }) {
       </div>
       <div>
         {stories.map(story => (
-          <Story key={story._id} title={story.title} content={story.story} />
+          <Story key={story._id} title={story.title} summary={story.summary}content={story.story} />
         ))}
       </div>
       <Footer />

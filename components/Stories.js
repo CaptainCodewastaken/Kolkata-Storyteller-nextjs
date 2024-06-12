@@ -20,7 +20,8 @@ const Stories = () => {
         {stories.map((story) => (
           <div key={story._id} className="p-4 border rounded shadow">
             <h3 className="text-xl font-semibold">{story.title}</h3>
-            <p>{story.content}</p>
+            <p>{story.summary}</p>
+            <p>{story.story}</p>
           </div>
         ))}
       </div>
